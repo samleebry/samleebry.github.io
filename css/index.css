@@ -1,0 +1,130 @@
+/* This CSS file takes care of portfolio Directory Boxes*/
+.portfolio_catalogue {
+	text-align: center;
+	padding: 100px 0 0 0;
+	display: block;
+}
+.portfolio_catalogue_title {
+	text-align: center;
+	padding: 10px 0px;
+	clear: both;
+}
+.portfolio_catalogue_subtitle {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.portfolio_catalogue_boxes {
+	width: 960px;
+	height: 540px;
+	margin: 10px 14px 17px 10px;
+	float: left;
+	position: relative;
+	
+	border-bottom: 1px solid #000;
+	-webkit-box-shadow: 0px 0px 5px #0a0a0a;
+	-moz-box-shadow: 0px 0px 5px #0a0a0a;
+	-o-box-shadow: 0px 0px 5px #0a0a0a;
+	box-shadow: 0px 0px 5px #0a0a0a;
+
+}
+
+.portfolio_catalogue_boxes_labels {
+	width: 100%;
+	height: 35px;
+	color: #fff;
+	text-align: left;
+	padding: 5px 0;
+	background: #000;
+	background: rgba(0,0,0,0.80);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE 8 & 9 */
+	filter: alpha(opacity = 80);
+	_zoom: 1; /* IE 6 */
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.portfolio_catalogue_boxTitle {
+	letter-spacing: -0.01em;
+	padding: 5px 10px;
+	padding: 4px 10px\9; /* IE 8 and below */
+ *padding: 4px 10px; /* IE 7 and below */
+	_padding: 4px 10px; /* IE 6 */
+	color: #fff;
+}
+.portfolio_catalogue_boxes_panel {
+	width: 960px;
+	height: 540px;
+	padding: 0px 0px 0px 0px;
+	background: #0c0c0c;
+	filter: alpha(opacity=90);
+	-moz-opacity: 0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	cursor: pointer;
+	cursor: pointer\9; /* IE 8 and below */
+ *cursor: pointer; /* IE 7 and below */
+	_cursor: pointer; /* IE 6 */
+}
+
+.portfolio_catalogue_boxes_text {
+	padding: 40px 40px 40px 40px;
+	text-align: left;
+}
+
+.portfolio_catalogue_boxes_panel_subCat {
+	color: #86b15d; 
+	font-weight:bold;
+	text-transform: uppercase;
+}
+.portfolio_catalogue_boxes_panel_info {
+	color: #000;
+}
+.portfolio_catalogue_boxes_panel_tagline {
+	color: #fff;
+	margin-top: 20px;
+}
+.portfolio_catalogue_boxes:hover .portfolio_catalogue_boxes_panel {
+	visibility: visible;
+}
+.portfolio_catalogue_boxes:hover .portfolio_catalogue_boxes_labels, .portfolio_catalogue_boxes:hover .portfolio_catalogue_boxTitle {
+	display: none;
+}
+
+@media (max-width: 980px) {
+img {
+	width: 480px;
+	height: 270px;
+}
+
+.portfolio_catalogue_boxes {
+	width: 480px;
+	height: 270px;
+}
+
+.portfolio_catalogue_boxes_panel {
+	width: 480px;
+	height: 270px;
+}
+}
+
+@media (max-width: 510px) {
+	img {
+	width: 360px;
+	height: 202.5px;
+}
+
+.portfolio_catalogue_boxes {
+	width: 360px;
+	height: 202.5px;
+}
+
+.portfolio_catalogue_boxes_panel {
+	width: 360px;
+	height: 202.5px;
+}
+}
+

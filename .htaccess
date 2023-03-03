@@ -1,0 +1,22 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 month"
+ExpiresByType image/ico "access plus 1 month"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##
+
+# Redirects domain.com/file.html to domain.com/file
+#RewriteCond %{REQUEST_FILENAME} !-d          # is not directory
+#RewriteCond %{REQUEST_FILENAME}\.html -f     # is an existing html file
+#RewriteCond %{REQUEST_URI} ^(.+)\.html$      # request URI ends with .html
+#RewriteRule (.*)\.html$ /$1 [R=301,L]        # redirect from index.html to index
